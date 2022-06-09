@@ -9,7 +9,6 @@ nix-env -iA \
 	nixpkgs.zsh \
 	nixpkgs.antibody \
 	nixpkgs.git \
-	nixpkgs.neovim \
 	nixpkgs.tmux \
 	nixpkgs.stow \
 	nixpkgs.yarn \
@@ -19,17 +18,12 @@ nix-env -iA \
 	nixpkgs.gnumake \
 	nixpkgs.gcc \
 	nixpkgs.direnv\
-    nixpkgs.nodejs\
-    nixpkgs.nodePackages.npm\
-    nixpkgs.nodePackages.prettier\
-    nixpkgs.nodePackages.typescript\
-    nixpkgs.nodePackages.eslint
+ 
 
 
 
 # stow dotfiles
 stow git
-stow nvim
 stow tmux
 stow zsh
 
