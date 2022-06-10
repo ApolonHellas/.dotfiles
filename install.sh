@@ -23,13 +23,6 @@ nix-env -iA \
 	nixpkgs.xsel \
 	nixpkgs.nodePackages.npm\
 	
- 
-# moving nvim folder and cloing nvim cofig from lunar
-sudo mv ~/.config/nvim ~/.config/nvim.old
-git clone https://github.com/LunarVim/Neovim-from-scratch.git ~/.config/nvim
-sudo apt install -y python3-pip 
-
-
 # stow dotfiles
 stow git
 stow tmux
@@ -46,3 +39,8 @@ antibody bundle < ~/.zsh_plugins.txt > ~/.zsh_plugins.sh
 
 # Use kitty terminal on MacOS
 [ `uname -s` = 'Darwin' ] && stow kitty
+
+# moving nvim folder and cloing nvim cofig from lunar
+sudo mv ~/.config/nvim ~/.config/nvim.old
+git clone https://github.com/LunarVim/Neovim-from-scratch.git ~/.config/nvim
+sudo apt install -y python3-pip
