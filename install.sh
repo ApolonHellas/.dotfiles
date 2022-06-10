@@ -17,9 +17,14 @@ nix-env -iA \
 	nixpkgs.bat \
 	nixpkgs.gnumake \
 	nixpkgs.gcc \
-	nixpkgs.direnv\
+	nixpkgs.direnv \
+	nixpkgs.neovim \
+	nixpkgs.nodejs \
+	nixpkgs.nodePackages.npm\
  
-
+# moving nvim folder and cloing nvim cofig from lunar
+sudo mv ~/.config/nvim ~/.config/nvim.old
+git clone https://github.com/LunarVim/Neovim-from-scratch.git
 
 
 # stow dotfiles
