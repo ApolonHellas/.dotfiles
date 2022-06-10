@@ -27,7 +27,7 @@ nix-env -iA \
 # moving nvim folder and cloing nvim cofig from lunar
 sudo mv ~/.config/nvim ~/.config/nvim.old
 git clone https://github.com/LunarVim/Neovim-from-scratch.git ~/.config/nvim
-sudo apt install python3-pip
+sudo apt install -y python3-pip 
 
 
 # stow dotfiles
