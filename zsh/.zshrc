@@ -11,7 +11,7 @@ export NVM_DIR=${HOME}/.nvm
 export NVM_COMPLETION=true
 
 source ${HOME}/.zsh_plugins.sh
-
+export PATH="$HOME/.local/bin/:$PATH"
 # Bundle zsh plugins via antibody
 alias update-antibody='antibody bundle < $HOME/.zsh_plugins.txt > $HOME/.zsh_plugins.sh'
 # List out all globally installed npm packages
