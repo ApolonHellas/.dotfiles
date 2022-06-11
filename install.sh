@@ -31,6 +31,11 @@ stow zsh
 # add zsh as a login shell
 command -v zsh | sudo tee -a /etc/shells
 
+# TODO: in fedora only
+# sudo dnf install -y util-linux
+# sudo dnf install -y zsh 
+# chsh -s $(which zsh)
+
 # use zsh as default shell
 sudo chsh -s $(which zsh) $USER
 
