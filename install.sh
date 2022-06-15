@@ -27,7 +27,7 @@ nix-env -iA \
 stow git
 stow tmux
 stow zsh
-
+stow kitty
 # add zsh as a login shell
 command -v zsh | sudo tee -a /etc/shells
 
@@ -42,11 +42,10 @@ sudo chsh -s $(which zsh) $USER
 # bundle zsh plugins 
 antibody bundle < ~/.zsh_plugins.txt > ~/.zsh_plugins.sh
 
-# Use kitty terminal on MacOS
-[ `uname -s` = 'Darwin' ] && stow kitty
+bash <(curl -s https://raw.githubusercontent.com/lunarvim/lunarvim/master/utils/installer/install.sh)
 
 # moving nvim folder and cloing nvim cofig from lunar
-sudo mv ~/.config/nvim ~/.config/nvim.old
-sudo apt install -y python3-pip
-bash <(curl -s https://raw.githubusercontent.com/lunarvim/lunarvim/master/utils/installer/install.sh)
+#sudo mv ~/.config/nvim ~/.config/nvim.old
+#sudo apt install -y python3-pip
+#bash <(curl -s https://raw.githubusercontent.com/lunarvim/lunarvim/master/utils/installer/install.sh)
 #git clone https://github.com/LunarVim/Neovim-from-scratch.git ~/.config/nvim
