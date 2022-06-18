@@ -45,7 +45,6 @@ antibody bundle < ~/.zsh_plugins.txt > ~/.zsh_plugins.sh
 bash <(curl -s https://raw.githubusercontent.com/lunarvim/lunarvim/master/utils/installer/install.sh)
 
 # moving nvim folder and cloing nvim cofig from lunar
-#sudo mv ~/.config/nvim ~/.config/nvim.old
-#sudo apt install -y python3-pip
-#bash <(curl -s https://raw.githubusercontent.com/lunarvim/lunarvim/master/utils/installer/install.sh)
-#git clone https://github.com/LunarVim/Neovim-from-scratch.git ~/.config/nvim
+sudo mv ~/.config/nvim ~/.config/nvim.old
+sudo apt install -y python3-pip
+git clone https://github.com/LunarVim/nvim-basic-ide.git ~/.config/nvim
