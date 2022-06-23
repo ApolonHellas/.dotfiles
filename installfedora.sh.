@@ -32,21 +32,12 @@ stow zsh
 command -v zsh | sudo tee -a /etc/shells
 
 # TODO: in fedora only
-# sudo dnf install -y util-linux
-# sudo dnf install -y zsh 
-# chsh -s $(which zsh)
+sudo dnf install -y util-linux
+sudo dnf install -y zsh 
+chsh -s $(which zsh)
 
 # use zsh as default shell
 sudo chsh -s $(which zsh) $USER
 
 # bundle zsh plugins 
 antibody bundle < ~/.zsh_plugins.txt > ~/.zsh_plugins.sh
-
-# Use kitty terminal on MacOS
-[ `uname -s` = 'Darwin' ] && stow kitty
-
-# moving nvim folder and cloing nvim cofig from lunar
-sudo mv ~/.config/nvim ~/.config/nvim.old
-
-git clone https://github.com/LunarVim/Neovim-from-scratch.git ~/.config/nvim
-sudo apt install -y python3-pip
