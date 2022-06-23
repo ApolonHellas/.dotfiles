@@ -42,7 +42,7 @@ sudo chsh -s $(which zsh) $USER
 # bundle zsh plugins 
 antibody bundle < ~/.zsh_plugins.txt > ~/.zsh_plugins.sh
 
-bash <(curl -s https://raw.githubusercontent.com/lunarvim/lunarvim/master/utils/installer/install.sh)
+#bash <(curl -s https://raw.githubusercontent.com/lunarvim/lunarvim/master/utils/installer/install.sh)
 
 # moving nvim folder and cloing nvim cofig from lunar
 #sudo mv ~/.config/nvim ~/.config/nvim.old
