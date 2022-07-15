@@ -20,14 +20,13 @@ nix-env -iA \
 	nixpkgs.direnv \
 	nixpkgs.neovim \
 	nixpkgs.nodejs \
-	nixpkgs.xsel \
+	nixpkgs.vscode \
 	nixpkgs.nodePackages.npm\
 	
 # stow dotfiles
 stow git
 stow tmux
 stow zsh
-stow kitty
 # add zsh as a login shell
 command -v zsh | sudo tee -a /etc/shells
 
