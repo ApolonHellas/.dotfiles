@@ -18,6 +18,7 @@ nix-env -iA \
 	nixpkgs.gnumake \
 	nixpkgs.gcc \
 	nixpkgs.direnv \
+	nixpkgs.vscode-with-extensions \
 	nixpkgs.neovim \
 	nixpkgs.nodejs \
 	nixpkgs.xsel \
